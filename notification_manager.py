@@ -4,7 +4,7 @@ import smtplib
 import os
 
 
-SHEET_API_ENDPOINT = os.environ.get("SHEETY_API_ENDPOINT")
+SHEET_API_ENDPOINT = os.environ.get("SHEETY_API_ENDPOINT_USERS")
 MY_EMAIL = os.environ.get("APP_EMAIL")
 APP_PASSWORD = os.environ.get("APP_PASSWORD")
 # SHEETY_AUTH = {

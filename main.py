@@ -8,10 +8,10 @@ data_manager = DataManager()
 flight_data = FlightData()
 notification_manager = NotificationManager()
 
-sheety_api_endpoint = "https://api.sheety.co/5049260a3632bb7a599da36651c413bf/flightDeals/prices"
+sheety_api_endpoint = os.environ.get("SHEETY_API_ENDPOINT_PRICES")
 
 SHEETY_AUTH = {
-    "Authorization": "Basic WmFtYmk6WmFtYmlycnJ0ODU3QEA"
+    "Authorization": os.environ.get("SHEETY_BASIC_AUTH")
 }
 
 sheety_response = requests.get(url=sheety_api_endpoint, headers=SHEETY_AUTH)
